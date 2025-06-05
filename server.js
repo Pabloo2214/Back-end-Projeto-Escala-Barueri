@@ -1,8 +1,11 @@
 import express from "express";
+import MobilePublicRouter from './routes/Mobile-routes/Public.js'
+
 
 const app = express()
+app.use(express.json())
 
-app.
+app.use('/', MobilePublicRouter)
 
 /*
             *Rotas mobile:
